@@ -1,0 +1,2 @@
+101-----> Proxy not retrieved
+102-----> Client ID/Secret Error

@@ -1,0 +1,167 @@
+2025-08-26 17:58:13,873 - INFO - Starting application...
+2025-08-26 17:58:13,877 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-26 17:58:13,878 - INFO - Socket connected: <socket.socket fd=476, family=23, type=1, proto=6, laddr=('::1', 61494, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-26 17:58:13,878 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020C43D634D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020C43D634D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-26 17:58:13,894 - INFO - Aborting transport connection: state=1; <socket.socket fd=476, family=23, type=1, proto=6, laddr=('::1', 61494, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-26 17:58:13,905 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=476, family=23, type=1, proto=6, laddr=('::1', 61494, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-26 17:58:13,905 - INFO - Deactivating transport: state=1; <socket.socket fd=476, family=23, type=1, proto=6, laddr=('::1', 61494, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-26 17:58:13,905 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=False, error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+2025-08-26 17:58:13,905 - ERROR - Connection closed while authenticating indicating a probable authentication error
+2025-08-26 17:58:13,905 - INFO - Connection setup terminated due to ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+2025-08-26 17:58:13,905 - ERROR - AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+2025-08-26 17:58:13,906 - INFO - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-08-26 17:58:13,906 - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=476, family=23, type=1, proto=6, laddr=('::1', 61494, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-26 17:58:13,906 - INFO - Socket connected: <socket.socket fd=756, family=2, type=1, proto=6, laddr=('127.0.0.1', 61495), raddr=('127.0.0.1', 5672)>
+2025-08-26 17:58:13,907 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020C43D31E50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020C43D31E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-26 17:58:13,911 - INFO - Aborting transport connection: state=1; <socket.socket fd=756, family=2, type=1, proto=6, laddr=('127.0.0.1', 61495), raddr=('127.0.0.1', 5672)>
+2025-08-26 17:58:13,911 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=756, family=2, type=1, proto=6, laddr=('127.0.0.1', 61495), raddr=('127.0.0.1', 5672)>
+2025-08-26 17:58:13,911 - INFO - Deactivating transport: state=1; <socket.socket fd=756, family=2, type=1, proto=6, laddr=('127.0.0.1', 61495), raddr=('127.0.0.1', 5672)>
+2025-08-26 17:58:13,912 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=False, error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+2025-08-26 17:58:13,912 - ERROR - Connection closed while authenticating indicating a probable authentication error
+2025-08-26 17:58:13,912 - INFO - Connection setup terminated due to ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+2025-08-26 17:58:13,912 - ERROR - AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+2025-08-26 17:58:13,912 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",); first exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",).
+2025-08-26 17:58:13,913 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",); first exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+2025-08-26 17:58:13,913 - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=756, family=2, type=1, proto=6, laddr=('127.0.0.1', 61495), raddr=('127.0.0.1', 5672)>
+2025-08-26 17:58:13,913 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",); first exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+2025-08-26 17:58:13,913 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ProbableAuthenticationError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+2025-08-26 18:01:07,324 - INFO - Starting application...
+2025-08-26 18:01:07,330 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-26 18:01:07,331 - INFO - Socket connected: <socket.socket fd=836, family=23, type=1, proto=6, laddr=('::1', 61506, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-26 18:01:07,331 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018F7C043380>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018F7C043380> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-26 18:01:07,382 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018F7C043380> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-26 18:01:07,383 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018F7C043380> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-26 18:01:07,383 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000018F7C043380> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-26 18:01:07,383 - INFO - Created channel=1
+2025-08-26 18:11:12,256 - INFO - Starting application...
+2025-08-26 18:11:12,318 - INFO - Getting proxy IP for current session
+2025-08-26 18:11:13,745 - INFO - Proxy url dict created for request
+2025-08-26 18:11:13,746 - INFO - Setting up crawler to extract data
+2025-08-26 18:11:15,037 - INFO - Sending Home page request....
+2025-08-26 18:13:09,509 - INFO - Exception occurred: Locator.wait_for: Timeout 80000ms exceeded.
+Call log:
+  - waiting for locator("input[data-id=\"location\"]") to be visible
+
+2025-08-26 18:13:09,510 - INFO - Closing application...
+2025-08-26 18:13:10,310 - INFO - Sending Home page request....
+2025-08-26 18:15:11,106 - INFO - Exception occurred: Locator.wait_for: Timeout 80000ms exceeded.
+Call log:
+  - waiting for locator("input[data-id=\"location\"]") to be visible
+
+2025-08-26 18:15:11,106 - INFO - Closing application...
+2025-08-26 18:15:11,914 - INFO - Sending Home page request....
+2025-08-26 18:16:10,025 - INFO - Closing application...
+2025-08-26 18:16:10,028 - ERROR - Exception in callback _task_done() at C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aio_pika\tools.py:40
+handle: <Handle _task_done() at C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aio_pika\tools.py:40>
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\hotel_crawler\hyatt\consumer.py", line 109, in main
+    await asyncio.Future()  # run forever
+    ^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aio_pika\tools.py", line 44, in _task_done
+    raise exc
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\hotel_crawler\hyatt\consumer.py", line 78, in on_message
+    async with message.process():
+               ~~~~~~~~~~~~~~~^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aio_pika\message.py", line 582, in __aexit__
+    if not self.message.channel.is_closed:
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aio_pika\message.py", line 391, in channel
+    raise ChannelInvalidStateError
+aiormq.exceptions.ChannelInvalidStateError
+2025-08-26 18:16:10,051 - INFO - Connection to amqp://user:******@localhost/ closed. Reconnecting after 5 seconds.
+2025-08-26 18:16:10,051 - ERROR - unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-15' coro=<on_message() done, defined at C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\hotel_crawler\hyatt\consumer.py:77> exception=ChannelInvalidStateError()>
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\hotel_crawler\hyatt\consumer.py", line 109, in main
+    await asyncio.Future()  # run forever
+    ^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 737, in _wrap_awaitable
+    return await awaitable
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aiormq\abc.py", line 44, in __inner
+    return await self.task
+           ^^^^^^^^^^^^^^^
+aiormq.exceptions.ChannelInvalidStateError
+2025-08-26 18:16:10,081 - ERROR - unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-14' coro=<consumer() done, defined at C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aio_pika\queue.py:31> exception=ChannelInvalidStateError()>
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\hotel_crawler\hyatt\consumer.py", line 109, in main
+    await asyncio.Future()  # run forever
+    ^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sunnyk_engineosol\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 737, in _wrap_awaitable
+    return await awaitable
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\sunnyk_engineosol\PycharmProjects\data_crawler_framework\.venv\Lib\site-packages\aiormq\abc.py", line 44, in __inner
+    return await self.task
+           ^^^^^^^^^^^^^^^
+aiormq.exceptions.ChannelInvalidStateError
