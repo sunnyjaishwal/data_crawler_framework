@@ -1,2 +1,15 @@
 .venv
 .idea
+*.env
+# Ignore all __pycache__ directories
+__pycache__/
+hotel_crawler/hyatt/__pycache__/
+hotel_crawler/marriott/__pycache__/
+
+# Ignore .log files specifically
+hotel_crawler/marriott.log
+hotel_crawler/marriott/marriott.log
+hotel_crawler/marriott/.env
+
+# Ignore a specific text file
+hotel_crawler/marriott_response.txt

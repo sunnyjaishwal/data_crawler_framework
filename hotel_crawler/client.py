@@ -29,8 +29,8 @@ def send_to_queue(data, username, password):
 
 if __name__ == "__main__":
 
-    # ---- Read request.json ----
-    request_filepath = Path(__file__).parent/ "request.json"
+    # ---- Read request_marriott.json ----
+    request_filepath = Path(__file__).parent/ "request_marriott.json"
     with request_filepath.open("r", encoding="utf-8") as f:
         dataList = json.load(f)
 
@@ -42,4 +42,4 @@ if __name__ == "__main__":
             "guest_count": int(data["guest_count"])
         }
 
-        send_to_queue(message, 'user', 'password')
+        send_to_queue(message, 'admin', 'admin')

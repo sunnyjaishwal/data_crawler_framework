@@ -2,7 +2,7 @@ import pika
 import json
 import time
 from ratelimit import limits, sleep_and_retry
-from .marriott import ExtractMarriott
+from .marriott_s import ExtractMarriott
 
 # Allow max 5 calls per 60 seconds
 @sleep_and_retry
@@ -14,7 +14,6 @@ def throttled_extract(hotel_id, check_in_date, check_out_date, guest_count):
 def callback(ch, method, properties, body):
     try:
         data = json.loads(body)
-
         # Validate required keys
         required_keys = ['hotel_id', 'check_in_date', 'check_out_date','guest_count']
         if not all(key in data for key in required_keys):
@@ -55,4 +54,4 @@ def start_consumer(username, password):
     channel.start_consuming()
 
 if __name__ == "__main__":
-    start_consumer('user', 'password')
+    start_consumer('admin', 'admin')

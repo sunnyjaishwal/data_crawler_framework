@@ -22,7 +22,7 @@ class ProxyManager:
         self.proxy_endpoint = PROXY_PROVIDER_ENDPOINT
         self.x_api_token = X_API_TOKEN
 
-    def fetch_proxy(self, region_code: str = 'us', max_retries: int = 3) -> Optional[dict]:
+    def fetch_proxy(self, region_code: str = 'us', max_retries: int = 3):
         """
         Fetch proxy from provider with retry and exponential backoff.
         """

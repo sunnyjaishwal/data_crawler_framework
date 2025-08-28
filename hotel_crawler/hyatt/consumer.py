@@ -110,6 +110,6 @@ async def main(username, password):
 
 if __name__ == "__main__":
     import sys
-    username = 'user'
-    password = 'password'
+    username = 'admin'
+    password = 'admin'
     asyncio.run(main(username, password))
