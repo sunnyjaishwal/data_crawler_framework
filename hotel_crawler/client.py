@@ -1,6 +1,6 @@
-# client.py
 import pika
 import json
+import  pandas as pd
 from pathlib import Path
 
 import pika
@@ -30,16 +30,25 @@ def send_to_queue(data, username, password):
 if __name__ == "__main__":
 
     # ---- Read request_marriott.json ----
-    request_filepath = Path(__file__).parent/ "request_marriott.json"
-    with request_filepath.open("r", encoding="utf-8") as f:
-        dataList = json.load(f)
-
-    for data in dataList["data"]:
+    request_filepath = Path(__file__).parent/ "hotels_booking_1000.csv"
+    # with request_filepath.open("r", encoding="utf-8") as f:
+    #     dataList = json.load(f)
+    #
+    # for data in dataList["data"]:
+    #     message = {
+    #         "hotel_id": data["hotel_id"],
+    #         "check_in_date": data["check_in_date"],
+    #         "check_out_date": data["check_out_date"],
+    #         "guest_count": int(data["guest_count"])
+    #     }
+    df = pd.read_csv(request_filepath)
+    for index, row in df.iterrows():
         message = {
-            "hotel_id": data["hotel_id"],
-            "check_in_date": data["check_in_date"],
-            "check_out_date": data["check_out_date"],
-            "guest_count": int(data["guest_count"])
+            'hotel_id': row['hotel_id'],
+            'check_in_date': row['check_in_date'],
+            'check_out_date': row['check_out_date'],
+            'guest_count': row['guest_count']
+
         }
 
         send_to_queue(message, 'admin', 'admin')

@@ -61,7 +61,7 @@ class ProxyManager:
                 wait = 2 ** attempt
                 time.sleep(wait)
 # # tEST CODE
-# if __name__ == "__main__":
-#     proxy_manager = ProxyManager()
-#     proxy = proxy_manager.fetch_proxy()
-#     print(proxy)
+if __name__ == "__main__":
+    proxy_manager = ProxyManager()
+    proxy = proxy_manager.fetch_proxy()
+    print(proxy)
